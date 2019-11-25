@@ -4,7 +4,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: dash-k8s-master-alert_manager
+  name: dash-k8s-all-alert-manager
   labels:
     grafana_dashboard: '1'
 data:
