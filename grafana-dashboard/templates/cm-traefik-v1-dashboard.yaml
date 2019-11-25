@@ -1,6 +1,6 @@
 {{- if .Values.dashboard.traefik_v1.create }}
 {{- if .Values.dashboard.traefik_v1.datasource.multiple }}
-  ## base on grafana dashboard gnetId: 4475
+## base on grafana dashboard gnetId: 4475
 apiVersion: v1
 kind: ConfigMap
 metadata:

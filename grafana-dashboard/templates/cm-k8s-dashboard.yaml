@@ -1,12 +1,11 @@
 {{- if .Values.dashboard.k8s.create }}
 {{- if .Values.dashboard.k8s.datasource.multiple }}
-  ## base on grafana dashboard gnetId: 6417
+ ## base on grafana dashboard gnetId: 6417
 
-  apiVersion: v1
+apiVersion: v1
 kind: ConfigMap
 metadata:
   name: dash-k8s
-  namespace: monitoring
   labels:
     grafana_dashboard: '1'
 data:
