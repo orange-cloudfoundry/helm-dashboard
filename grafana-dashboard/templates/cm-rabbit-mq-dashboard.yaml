@@ -847,7 +847,7 @@ data:
               "format": "time_series",
               "instant": false,
               "intervalFactor": 1,
-              "legendFormat": "\{\{node\}\}",
+              "legendFormat": "{{openp}}node\}\}",
               "refId": "A"
             }
           ],
@@ -1152,7 +1152,7 @@ data:
               "format": "time_series",
               "instant": false,
               "intervalFactor": 1,
-              "legendFormat": "\{\{rabbitmq_node\}\}",
+              "legendFormat": "{{openp}}rabbitmq_node\}\}",
               "refId": "A"
             }
           ],
@@ -1304,7 +1304,7 @@ data:
               "format": "time_series",
               "instant": false,
               "intervalFactor": 1,
-              "legendFormat": "\{\{instance\}\}",
+              "legendFormat": "{{openp}}instance\}\}",
               "refId": "A"
             }
           ],
@@ -1427,7 +1427,7 @@ data:
               "format": "time_series",
               "instant": false,
               "intervalFactor": 1,
-              "legendFormat": "\{\{queue\}\}",
+              "legendFormat": "{{openp}}queue\}\}",
               "refId": "A"
             }
           ],
@@ -1526,7 +1526,7 @@ data:
               "format": "time_series",
               "instant": false,
               "intervalFactor": 1,
-              "legendFormat": "\{\{queue\}\}",
+              "legendFormat": "{{openp}}queue\}\}",
               "refId": "A"
             }
           ],
@@ -1662,7 +1662,7 @@ data:
               "format": "time_series",
               "instant": false,
               "intervalFactor": 1,
-              "legendFormat": "\{\{queue\}\}",
+              "legendFormat": "{{openp}}queue\}\}",
               "refId": "A"
             }
           ],
@@ -1812,7 +1812,7 @@ data:
               "format": "time_series",
               "instant": false,
               "intervalFactor": 1,
-              "legendFormat": "\{\{instance\}\}",
+              "legendFormat": "{{openp}}instance\}\}",
               "refId": "A"
             }
           ],
@@ -1963,7 +1963,7 @@ data:
               "format": "time_series",
               "instant": false,
               "intervalFactor": 1,
-              "legendFormat": "\{\{instance\}\}",
+              "legendFormat": "{{openp}}instance\}\}",
               "refId": "A"
             }
           ],
@@ -2113,7 +2113,7 @@ data:
               "format": "time_series",
               "instant": false,
               "intervalFactor": 1,
-              "legendFormat": "\{\{instance\}\}",
+              "legendFormat": "{{openp}}instance\}\}",
               "refId": "A"
             }
           ],

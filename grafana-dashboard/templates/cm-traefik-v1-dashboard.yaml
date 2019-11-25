@@ -162,7 +162,7 @@ data:
               "expr": "traefik_backend_requests_total{backend=\"$backend\"}",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "\{\{method\}\} : \{\{code\}\}",
+              "legendFormat": "{{openp}}method\}\} : {{openp}}code\}\}",
               "refId": "A"
             }
           ],
@@ -402,7 +402,7 @@ data:
               "expr": "rate(traefik_entrypoint_requests_total{entrypoint=~\"$entrypoint\",code=\"200\"}[5m])",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "\{\{method\}\} : \{\{code\}\}",
+              "legendFormat": "{{openp}}method\}\} : {{openp}}code\}\}",
               "refId": "A"
             }
           ],
@@ -493,7 +493,7 @@ data:
               "expr": "rate(traefik_entrypoint_requests_total{entrypoint=~\"$entrypoint\",code!=\"200\"}[5m])",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "\{\{ method \}\} : \{\{code\}\}",
+              "legendFormat": "{{openp}} method \}\} : {{openp}}code\}\}",
               "refId": "A"
             }
           ],
@@ -574,7 +574,7 @@ data:
               "format": "time_series",
               "interval": "",
               "intervalFactor": 2,
-              "legendFormat": "\{\{ backend \}\}",
+              "legendFormat": "{{openp}} backend \}\}",
               "refId": "A"
             }
           ],
@@ -618,7 +618,7 @@ data:
               "format": "time_series",
               "interval": "",
               "intervalFactor": 2,
-              "legendFormat": "\{\{ entrypoint \}\}",
+              "legendFormat": "{{openp}} entrypoint \}\}",
               "refId": "A"
             }
           ],

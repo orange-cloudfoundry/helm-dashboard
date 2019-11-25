@@ -231,7 +231,7 @@ data:
               "format": "time_series",
               "instant": true,
               "intervalFactor": 1,
-              "legendFormat": "\{\{instance/}/}",
+              "legendFormat": "{{openp}}instance{{closep}}",
               "refId": "A",
               "step": 20
             }
@@ -578,13 +578,13 @@ data:
               "instant": false,
               "interval": "",
               "intervalFactor": 5,
-              "legendFormat": "filefd_\{\{instance/}/}",
+              "legendFormat": "filefd_{{openp}}instance{{closep}}",
               "refId": "B"
             },
             {
               "expr": "irate(node_context_switches_total{instance=~\"$node\"}[30m])",
               "intervalFactor": 5,
-              "legendFormat": "switches_\{\{instance/}/}",
+              "legendFormat": "switches_{{openp}}instance{{closep}}",
               "refId": "A"
             },
             {
@@ -872,7 +872,7 @@ data:
               "instant": false,
               "interval": "",
               "intervalFactor": 1,
-              "legendFormat": "\{\{instance/}/}_1m",
+              "legendFormat": "{{openp}}instance{{closep}}_1m",
               "metric": "",
               "refId": "A",
               "step": 20,
@@ -884,7 +884,7 @@ data:
               "instant": false,
               "interval": "",
               "intervalFactor": 1,
-              "legendFormat": "\{\{instance/}/}_5m",
+              "legendFormat": "{{openp}}instance{{closep}}_5m",
               "refId": "B",
               "step": 20
             },
@@ -894,7 +894,7 @@ data:
               "instant": false,
               "interval": "",
               "intervalFactor": 1,
-              "legendFormat": "\{\{instance/}/}_15m",
+              "legendFormat": "{{openp}}instance{{closep}}_15m",
               "refId": "C",
               "step": 20
             }
@@ -1017,7 +1017,7 @@ data:
               "instant": false,
               "interval": "",
               "intervalFactor": 1,
-              "legendFormat": "\{\{instance/}/}_System",
+              "legendFormat": "{{openp}}instance{{closep}}_System",
               "refId": "A",
               "step": 20
             },
@@ -1026,7 +1026,7 @@ data:
               "format": "time_series",
               "hide": false,
               "intervalFactor": 1,
-              "legendFormat": "\{\{instance/}/}_User",
+              "legendFormat": "{{openp}}instance{{closep}}_User",
               "refId": "B",
               "step": 240
             },
@@ -1036,7 +1036,7 @@ data:
               "hide": false,
               "instant": false,
               "intervalFactor": 1,
-              "legendFormat": "\{\{instance/}/}_Iowait",
+              "legendFormat": "{{openp}}instance{{closep}}_Iowait",
               "refId": "D",
               "step": 240
             },
@@ -1045,7 +1045,7 @@ data:
               "format": "time_series",
               "hide": false,
               "intervalFactor": 1,
-              "legendFormat": "\{\{instance/}/}_Total",
+              "legendFormat": "{{openp}}instance{{closep}}_Total",
               "refId": "F",
               "step": 240
             }
@@ -1151,7 +1151,7 @@ data:
               "expr": "irate(node_network_receive_bytes_total{instance=~'$node',device!~'tap.*|veth.*|br.*|docker.*|virbr*|lo*'}[30m])*8",
               "format": "time_series",
               "intervalFactor": 1,
-              "legendFormat": "\{\{instance/}/}_\{\{device/}/}_receive",
+              "legendFormat": "{{openp}}instance{{closep}}_{{openp}}device{{closep}}_receive",
               "refId": "A",
               "step": 4
             },
@@ -1159,7 +1159,7 @@ data:
               "expr": "irate(node_network_transmit_bytes_total{instance=~'$node',device!~'tap.*|veth.*|br.*|docker.*|virbr*|lo*'}[30m])*8",
               "format": "time_series",
               "intervalFactor": 1,
-              "legendFormat": "\{\{instance/}/}_\{\{device/}/}_transmit",
+              "legendFormat": "{{openp}}instance{{closep}}_{{openp}}device{{closep}}_transmit",
               "refId": "B",
               "step": 4
             }
@@ -1260,13 +1260,13 @@ data:
               "format": "time_series",
               "instant": false,
               "intervalFactor": 1,
-              "legendFormat": "\{\{instance/}/}：\{\{mountpoint/}/}",
+              "legendFormat": "{{openp}}instance{{closep}}：{{openp}}mountpoint{{closep}}",
               "refId": "A"
             },
             {
               "expr": "node_filesystem_files_free{instance=~'$node',fstype=~\"ext4|xfs\"} / node_filesystem_files{instance=~'$node',fstype=~\"ext4|xfs\"}",
               "hide": true,
-              "legendFormat": "Inodes：\{\{instance/}/}：\{\{mountpoint/}/}",
+              "legendFormat": "Inodes：{{openp}}instance{{closep}}：{{openp}}mountpoint{{closep}}",
               "refId": "B"
             }
           ],
@@ -1380,7 +1380,7 @@ data:
               "hide": false,
               "instant": false,
               "intervalFactor": 1,
-              "legendFormat": "\{\{instance/}/}_Total",
+              "legendFormat": "{{openp}}instance{{closep}}_Total",
               "refId": "A",
               "step": 4
             },
@@ -1389,7 +1389,7 @@ data:
               "format": "time_series",
               "hide": false,
               "intervalFactor": 1,
-              "legendFormat": "\{\{instance/}/}_Used",
+              "legendFormat": "{{openp}}instance{{closep}}_Used",
               "refId": "B",
               "step": 4
             },
@@ -1399,7 +1399,7 @@ data:
               "hide": false,
               "interval": "",
               "intervalFactor": 1,
-              "legendFormat": "\{\{instance/}/}_Avaliable",
+              "legendFormat": "{{openp}}instance{{closep}}_Avaliable",
               "refId": "F",
               "step": 4
             }
@@ -1512,7 +1512,7 @@ data:
               "expr": "irate(node_disk_io_time_seconds_total{instance=~\"$node\"}[30m])",
               "format": "time_series",
               "intervalFactor": 1,
-              "legendFormat": "\{\{instance/}/}_\{\{device/}/}_ IO time",
+              "legendFormat": "{{openp}}instance{{closep}}_{{openp}}device{{closep}}_ IO time",
               "refId": "C"
             }
           ],
@@ -1618,7 +1618,7 @@ data:
               "hide": false,
               "interval": "",
               "intervalFactor": 1,
-              "legendFormat": "\{\{instance/}/}_\{\{device/}/}_Reads completed",
+              "legendFormat": "{{openp}}instance{{closep}}_{{openp}}device{{closep}}_Reads completed",
               "refId": "A",
               "step": 10
             },
@@ -1627,7 +1627,7 @@ data:
               "format": "time_series",
               "hide": false,
               "intervalFactor": 1,
-              "legendFormat": "\{\{instance/}/}_\{\{device/}/}_Writes completed",
+              "legendFormat": "{{openp}}instance{{closep}}_{{openp}}device{{closep}}_Writes completed",
               "refId": "B",
               "step": 10
             }
@@ -1733,7 +1733,7 @@ data:
               "format": "time_series",
               "interval": "",
               "intervalFactor": 1,
-              "legendFormat": "\{\{instance/}/}_\{\{device/}/}_Read bytes",
+              "legendFormat": "{{openp}}instance{{closep}}_{{openp}}device{{closep}}_Read bytes",
               "refId": "A",
               "step": 10
             },
@@ -1742,7 +1742,7 @@ data:
               "format": "time_series",
               "hide": false,
               "intervalFactor": 1,
-              "legendFormat": "\{\{instance/}/}_\{\{device/}/}_Written bytes",
+              "legendFormat": "{{openp}}instance{{closep}}_{{openp}}device{{closep}}_Written bytes",
               "refId": "B",
               "step": 10
             }
@@ -1850,7 +1850,7 @@ data:
               "instant": false,
               "interval": "",
               "intervalFactor": 1,
-              "legendFormat": "\{\{instance/}/}_\{\{device/}/}_Read time",
+              "legendFormat": "{{openp}}instance{{closep}}_{{openp}}device{{closep}}_Read time",
               "refId": "B"
             },
             {
@@ -1859,7 +1859,7 @@ data:
               "hide": false,
               "instant": false,
               "intervalFactor": 1,
-              "legendFormat": "\{\{instance/}/}_\{\{device/}/}_Write time",
+              "legendFormat": "{{openp}}instance{{closep}}_{{openp}}device{{closep}}_Write time",
               "refId": "C"
             }
           ],
@@ -1968,7 +1968,7 @@ data:
               "instant": false,
               "interval": "",
               "intervalFactor": 1,
-              "legendFormat": "\{\{instance/}/}_CurrEstab",
+              "legendFormat": "{{openp}}instance{{closep}}_CurrEstab",
               "refId": "A",
               "step": 20
             },
@@ -1976,22 +1976,22 @@ data:
               "expr": "node_sockstat_TCP_tw{instance=~'$node'}",
               "format": "time_series",
               "intervalFactor": 1,
-              "legendFormat": "\{\{instance/}/}_TCP_tw",
+              "legendFormat": "{{openp}}instance{{closep}}_TCP_tw",
               "refId": "D"
             },
             {
               "expr": "node_sockstat_sockets_used{instance=~'$node'}",
-              "legendFormat": "\{\{instance/}/}_Sockets_used",
+              "legendFormat": "{{openp}}instance{{closep}}_Sockets_used",
               "refId": "B"
             },
             {
               "expr": "node_sockstat_UDP_inuse{instance=~'$node'}",
-              "legendFormat": "\{\{instance/}/}_UDP_inuse",
+              "legendFormat": "{{openp}}instance{{closep}}_UDP_inuse",
               "refId": "C"
             },
             {
               "expr": "node_sockstat_TCP_alloc{instance=~'$node'}",
-              "legendFormat": "\{\{instance/}/}_TCP_alloc",
+              "legendFormat": "{{openp}}instance{{closep}}_TCP_alloc",
               "refId": "E"
             }
           ],
@@ -2088,7 +2088,7 @@ data:
               "expr": "node_hwmon_temp_celsius{instance=~'$node'}",
               "format": "time_series",
               "intervalFactor": 10,
-              "legendFormat": "\{\{instance/}/}_\{\{chip/}/}_\{\{sensor/}/}",
+              "legendFormat": "{{openp}}instance{{closep}}_{{openp}}chip{{closep}}_{{openp}}sensor{{closep}}",
               "refId": "A"
             }
           ],

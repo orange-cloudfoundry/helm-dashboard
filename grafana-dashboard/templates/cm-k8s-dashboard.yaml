@@ -883,7 +883,7 @@ data:
               "instant": true,
               "interval": "",
               "intervalFactor": 1,
-              "legendFormat": "\{\{ deployment /}/}",
+              "legendFormat": "{{openp}} deployment {{closep}}",
               "refId": "A"
             }
           ],
