@@ -1210,7 +1210,7 @@ data:
               "expr": "pg_stat_database_numbackends{datname=~\"$db\",instance=~\"$host\"}",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "{{include openp}}__name__{{include closep}}",
+              "legendFormat": "{{include "openp"}}__name__{{include "closep"}}",
               "refId": "A",
               "step": 240
             }
