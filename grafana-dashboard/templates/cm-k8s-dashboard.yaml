@@ -1,4 +1,4 @@
-{{- if .Values.dashboard.k8s.create && .Values.dashboard.k8s.datasource.multiple-}}
+{{- if .Values.dashboard.k8s.create && .Values.dashboard.k8s.datasource.multiple -}}
   ## base on grafana dashboard gnetId: 6417
 
   apiVersion: v1
