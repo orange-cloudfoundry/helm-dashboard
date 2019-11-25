@@ -1,4 +1,4 @@
-{{- if .Values.dashboard.alertmanager.create and .Values.dashboard.alertmanager.datasource.multiple -}}
+{{- if .Values.dashboard.alertManager.create and .Values.dashboard.alertManager.datasource.multiple -}}
 ## base on grafana dashboard gnetId: 9578
 apiVersion: v1
 kind: ConfigMap
