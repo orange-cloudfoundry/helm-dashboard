@@ -1,5 +1,6 @@
 {{- if .Values.dashboard.bosh.create -}}
-{{- if  not .Values.dashboard.bosh.datasource.multiple -}}
+{{- if .Values.dashboard.bosh.datasource.multiple -}}
+{{- else -}}
 apiVersion: v1
 kind: ConfigMap
 metadata:
