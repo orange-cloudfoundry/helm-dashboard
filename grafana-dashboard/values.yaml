@@ -1,6 +1,6 @@
 dashboard:
   alertManager:
-    create: false
+    create: true
     datasource:
       # data source variable is used
       multiple: true
@@ -8,15 +8,15 @@ dashboard:
       single-datasource-name: prometheus
 
   bosh:
-    create: false
+    create: true
     datasource:
       # data source variable is used
-      multiple: true
+      multiple: false
       #if not multiple single data source name is used
-      single-datasource-name: prometheus
+      single-datasource-name: bosh
 
   k8s:
-    create: false
+    create: true
     datasource:
       # data source variable is used
       multiple: true
@@ -24,7 +24,7 @@ dashboard:
       single-datasource-name: prometheus
 
   nodeExporter:
-    create: false
+    create: true
     datasource:
       # data source variable is used
       multiple: true
@@ -32,7 +32,7 @@ dashboard:
       single-datasource-name: prometheus
 
   openebs:
-    create: false
+    create: true
     datasource:
       # data source variable is used
       multiple: true
@@ -40,7 +40,7 @@ dashboard:
       single-datasource-name: prometheus
 
   postgresql:
-    create: false
+    create: true
     datasource:
       # data source variable is used
       multiple: true
@@ -48,7 +48,7 @@ dashboard:
       single-datasource-name: prometheus
 
   rabbitMq:
-    create: false
+    create: true
     datasource:
       # data source variable is used
       multiple: true
@@ -56,7 +56,7 @@ dashboard:
       single-datasource-name: prometheus
 
   redis:
-    create: false 
+    create: true
     datasource:
       # data source variable is used
       multiple: true
