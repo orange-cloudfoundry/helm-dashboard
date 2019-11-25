@@ -4,8 +4,8 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: dash-k8s-all-openebs
-labels:
-  grafana_dashboard: '1'
+  labels:
+    grafana_dashboard: '1'
 data:
  grafana_k8s_openebs_dashboard.json: |
 
