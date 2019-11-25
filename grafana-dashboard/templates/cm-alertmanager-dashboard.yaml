@@ -765,7 +765,7 @@ data:
           "expr": "sum(increase(alertmanager_notifications_total{instance=~\"$instance\"}[$__interval])) by (integration)",
           "format": "time_series",
           "intervalFactor": 1,
-          "legendFormat": "{{openp}} integration{{closep}}",
+          "legendFormat": "{{include openp}} integration{{include closep}}",
           "refId": "B"
         },
         {
@@ -774,7 +774,7 @@ data:
           "hide": false,
           "interval": "",
           "intervalFactor": 1,
-          "legendFormat": "Failed {{openp}} integration {{closep}}",
+          "legendFormat": "Failed {{include openp}} integration {{include closep}}",
           "refId": "A"
         }
         ],
@@ -877,7 +877,7 @@ data:
           "expr": "sum(histogram_quantile(0.9,rate(alertmanager_notification_latency_seconds_bucket{instance=~\"$instance\"}[$__interval]))) by (integration)",
           "format": "time_series",
           "intervalFactor": 1,
-          "legendFormat": "0.9q {{openp}} integration {{closep}}",
+          "legendFormat": "0.9q {{include openp}} integration {{include closep}}",
           "refId": "B"
         },
         {
@@ -885,7 +885,7 @@ data:
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
-          "legendFormat": "0.99q  {{openp}} integration {{closep}}",
+          "legendFormat": "0.99q  {{include openp}} integration {{include closep}}",
           "refId": "A"
         }
         ],
@@ -995,7 +995,7 @@ data:
           "expr": "sum(alertmanager_alerts{instance=~\"$instance\"}) by (state)",
           "format": "time_series",
           "intervalFactor": 1,
-          "legendFormat": "{{openp}}state{{closep}}",
+          "legendFormat": "{{include openp}}state{{include closep}}",
           "refId": "A"
         }
         ],
@@ -1094,7 +1094,7 @@ data:
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
-          "legendFormat": "{{openp}} status {{closep}}",
+          "legendFormat": "{{include openp}} status {{include closep}}",
           "refId": "A"
         }
         ],
@@ -2924,14 +2924,14 @@ data:
             "expr": "sum(increase(alertmanager_cluster_messages_sent_total{instance=~\"$instance\"}[$__interval])) by (msg_type)",
             "format": "time_series",
             "intervalFactor": 1,
-            "legendFormat": "sent {{openp}}msg_type{{closep}}",
+            "legendFormat": "sent {{include openp}}msg_type{{include closep}}",
             "refId": "A"
           },
           {
             "expr": "sum(increase(alertmanager_cluster_messages_received_total{instance=~\"$instance\"}[$__interval])) by (msg_type)",
             "format": "time_series",
             "intervalFactor": 1,
-            "legendFormat": "received {{openp}}msg_type{{closep}}",
+            "legendFormat": "received {{include openp}}msg_type{{include closep}}",
             "refId": "B"
           }
           ],
@@ -3040,14 +3040,14 @@ data:
             "expr": "sum(increase(alertmanager_cluster_messages_sent_total{instance=~\"$instance\"}[$__interval])) by (msg_type)",
             "format": "time_series",
             "intervalFactor": 1,
-            "legendFormat": "sent {{openp}}msg_type{{closep}}",
+            "legendFormat": "sent {{include openp}}msg_type{{include closep}}",
             "refId": "A"
           },
           {
             "expr": "sum(increase(alertmanager_cluster_messages_received_total{instance=~\"$instance\"}[$__interval])) by (msg_type)",
             "format": "time_series",
             "intervalFactor": 1,
-            "legendFormat": "received {{openp}}msg_type{{closep}}",
+            "legendFormat": "received {{include openp}}msg_type{{include closep}}",
             "refId": "B"
           }
           ],
@@ -3156,14 +3156,14 @@ data:
             "expr": "sum(increase(alertmanager_cluster_messages_sent_total{instance=~\"$instance\"}[$__interval])) by (msg_type)",
             "format": "time_series",
             "intervalFactor": 1,
-            "legendFormat": "sent {{openp}}msg_type{{closep}}",
+            "legendFormat": "sent {{include openp}}msg_type{{include closep}}",
             "refId": "A"
           },
           {
             "expr": "sum(increase(alertmanager_cluster_messages_received_total{instance=~\"$instance\"}[$__interval])) by (msg_type)",
             "format": "time_series",
             "intervalFactor": 1,
-            "legendFormat": "received {{openp}}msg_type{{closep}}",
+            "legendFormat": "received {{include openp}}msg_type{{include closep}}",
             "refId": "B"
           }
           ],
@@ -3272,14 +3272,14 @@ data:
             "expr": "sum(increase(alertmanager_cluster_messages_sent_total{instance=~\"$instance\"}[$__interval])) by (msg_type)",
             "format": "time_series",
             "intervalFactor": 1,
-            "legendFormat": "sent {{openp}}msg_type{{closep}}",
+            "legendFormat": "sent {{include openp}}msg_type{{include closep}}",
             "refId": "A"
           },
           {
             "expr": "sum(increase(alertmanager_cluster_messages_received_total{instance=~\"$instance\"}[$__interval])) by (msg_type)",
             "format": "time_series",
             "intervalFactor": 1,
-            "legendFormat": "received {{openp}}msg_type{{closep}}",
+            "legendFormat": "received {{include openp}}msg_type{{include closep}}",
             "refId": "B"
           }
           ],
@@ -3387,14 +3387,14 @@ data:
             "expr": "sum(increase(alertmanager_cluster_messages_sent_size_total{instance=~\"$instance\"}[$__interval])) by (msg_type)",
             "format": "time_series",
             "intervalFactor": 1,
-            "legendFormat": "sent {{openp}}msg_type{{closep}}",
+            "legendFormat": "sent {{include openp}}msg_type{{include closep}}",
             "refId": "A"
           },
           {
             "expr": "sum(increase(alertmanager_cluster_messages_received_size_total{instance=~\"$instance\"}[$__interval])) by (msg_type)",
             "format": "time_series",
             "intervalFactor": 1,
-            "legendFormat": "received {{openp}}msg_type{{closep}}",
+            "legendFormat": "received {{include openp}}msg_type{{include closep}}",
             "refId": "B"
           }
           ],
@@ -3503,14 +3503,14 @@ data:
             "expr": "sum(increase(alertmanager_cluster_messages_sent_size_total{instance=~\"$instance\"}[$__interval])) by (msg_type)",
             "format": "time_series",
             "intervalFactor": 1,
-            "legendFormat": "sent {{openp}}msg_type{{closep}}",
+            "legendFormat": "sent {{include openp}}msg_type{{include closep}}",
             "refId": "A"
           },
           {
             "expr": "sum(increase(alertmanager_cluster_messages_received_size_total{instance=~\"$instance\"}[$__interval])) by (msg_type)",
             "format": "time_series",
             "intervalFactor": 1,
-            "legendFormat": "received {{openp}}msg_type{{closep}}",
+            "legendFormat": "received {{include openp}}msg_type{{include closep}}",
             "refId": "B"
           }
           ],
@@ -3619,14 +3619,14 @@ data:
             "expr": "sum(increase(alertmanager_cluster_messages_sent_size_total{instance=~\"$instance\"}[$__interval])) by (msg_type)",
             "format": "time_series",
             "intervalFactor": 1,
-            "legendFormat": "sent {{openp}}msg_type{{closep}}",
+            "legendFormat": "sent {{include openp}}msg_type{{include closep}}",
             "refId": "A"
           },
           {
             "expr": "sum(increase(alertmanager_cluster_messages_received_size_total{instance=~\"$instance\"}[$__interval])) by (msg_type)",
             "format": "time_series",
             "intervalFactor": 1,
-            "legendFormat": "received {{openp}}msg_type{{closep}}",
+            "legendFormat": "received {{include openp}}msg_type{{include closep}}",
             "refId": "B"
           }
           ],
@@ -3735,14 +3735,14 @@ data:
             "expr": "sum(increase(alertmanager_cluster_messages_sent_size_total{instance=~\"$instance\"}[$__interval])) by (msg_type)",
             "format": "time_series",
             "intervalFactor": 1,
-            "legendFormat": "sent {{openp}}msg_type{{closep}}",
+            "legendFormat": "sent {{include openp}}msg_type{{include closep}}",
             "refId": "A"
           },
           {
             "expr": "sum(increase(alertmanager_cluster_messages_received_size_total{instance=~\"$instance\"}[$__interval])) by (msg_type)",
             "format": "time_series",
             "intervalFactor": 1,
-            "legendFormat": "received {{openp}}msg_type{{closep}}",
+            "legendFormat": "received {{include openp}}msg_type{{include closep}}",
             "refId": "B"
           }
           ],
@@ -4293,21 +4293,21 @@ data:
             "format": "time_series",
             "hide": false,
             "intervalFactor": 1,
-            "legendFormat": "{{openp}}key{{closep}}",
+            "legendFormat": "{{include openp}}key{{include closep}}",
             "refId": "A"
           },
           {
             "expr": "increase(alertmanager_oversized_gossip_message_dropped_total{instance=~\"$instance\"}[$__interval])",
             "format": "time_series",
             "intervalFactor": 1,
-            "legendFormat": "dropped {{openp}}key{{closep}}",
+            "legendFormat": "dropped {{include openp}}key{{include closep}}",
             "refId": "B"
           },
           {
             "expr": "increase(alertmanager_oversized_gossip_message_failure_total{instance=~\"$instance\"}[$__interval])",
             "format": "time_series",
             "intervalFactor": 1,
-            "legendFormat": "failed {{openp}}key{{closep}}",
+            "legendFormat": "failed {{include openp}}key{{include closep}}",
             "refId": "C"
           }
           ],
@@ -4414,21 +4414,21 @@ data:
             "format": "time_series",
             "hide": false,
             "intervalFactor": 1,
-            "legendFormat": "{{openp}}key{{closep}}",
+            "legendFormat": "{{include openp}}key{{include closep}}",
             "refId": "A"
           },
           {
             "expr": "increase(alertmanager_oversized_gossip_message_dropped_total{instance=~\"$instance\"}[$__interval])",
             "format": "time_series",
             "intervalFactor": 1,
-            "legendFormat": "dropped {{openp}}key{{closep}}",
+            "legendFormat": "dropped {{include openp}}key{{include closep}}",
             "refId": "B"
           },
           {
             "expr": "increase(alertmanager_oversized_gossip_message_failure_total{instance=~\"$instance\"}[$__interval])",
             "format": "time_series",
             "intervalFactor": 1,
-            "legendFormat": "failed {{openp}}key{{closep}}",
+            "legendFormat": "failed {{include openp}}key{{include closep}}",
             "refId": "C"
           }
           ],
@@ -4535,21 +4535,21 @@ data:
             "format": "time_series",
             "hide": false,
             "intervalFactor": 1,
-            "legendFormat": "{{openp}}key{{closep}}",
+            "legendFormat": "{{include openp}}key{{include closep}}",
             "refId": "A"
           },
           {
             "expr": "increase(alertmanager_oversized_gossip_message_dropped_total{instance=~\"$instance\"}[$__interval])",
             "format": "time_series",
             "intervalFactor": 1,
-            "legendFormat": "dropped {{openp}}key{{closep}}",
+            "legendFormat": "dropped {{include openp}}key{{include closep}}",
             "refId": "B"
           },
           {
             "expr": "increase(alertmanager_oversized_gossip_message_failure_total{instance=~\"$instance\"}[$__interval])",
             "format": "time_series",
             "intervalFactor": 1,
-            "legendFormat": "failed {{openp}}key{{closep}}",
+            "legendFormat": "failed {{include openp}}key{{include closep}}",
             "refId": "C"
           }
           ],
@@ -4656,21 +4656,21 @@ data:
             "format": "time_series",
             "hide": false,
             "intervalFactor": 1,
-            "legendFormat": "{{openp}}key{{closep}}",
+            "legendFormat": "{{include openp}}key{{include closep}}",
             "refId": "A"
           },
           {
             "expr": "increase(alertmanager_oversized_gossip_message_dropped_total{instance=~\"$instance\"}[$__interval])",
             "format": "time_series",
             "intervalFactor": 1,
-            "legendFormat": "dropped {{openp}}key{{closep}}",
+            "legendFormat": "dropped {{include openp}}key{{include closep}}",
             "refId": "B"
           },
           {
             "expr": "increase(alertmanager_oversized_gossip_message_failure_total{instance=~\"$instance\"}[$__interval])",
             "format": "time_series",
             "intervalFactor": 1,
-            "legendFormat": "failed {{openp}}key{{closep}}",
+            "legendFormat": "failed {{include openp}}key{{include closep}}",
             "refId": "C"
           }
           ],
@@ -4771,7 +4771,7 @@ data:
             "format": "time_series",
             "hide": false,
             "intervalFactor": 1,
-            "legendFormat": "{{openp}}key{{closep}}",
+            "legendFormat": "{{include openp}}key{{include closep}}",
             "refId": "A"
           }
           ],
@@ -4873,7 +4873,7 @@ data:
             "format": "time_series",
             "hide": false,
             "intervalFactor": 1,
-            "legendFormat": "{{openp}}key{{closep}}",
+            "legendFormat": "{{include openp}}key{{include closep}}",
             "refId": "A"
           }
           ],
@@ -4975,7 +4975,7 @@ data:
             "format": "time_series",
             "hide": false,
             "intervalFactor": 1,
-            "legendFormat": "{{openp}}key{{closep}}",
+            "legendFormat": "{{include openp}}key{{include closep}}",
             "refId": "A"
           }
           ],
@@ -5077,7 +5077,7 @@ data:
             "format": "time_series",
             "hide": false,
             "intervalFactor": 1,
-            "legendFormat": "{{openp}}key{{closep}}",
+            "legendFormat": "{{include openp}}key{{include closep}}",
             "refId": "A"
           }
           ],
@@ -7688,7 +7688,7 @@ data:
             "format": "time_series",
             "hide": false,
             "intervalFactor": 1,
-            "legendFormat": "{{openp}}state{{closep}}",
+            "legendFormat": "{{include openp}}state{{include closep}}",
             "refId": "A"
           }
           ],
@@ -7790,7 +7790,7 @@ data:
             "format": "time_series",
             "hide": false,
             "intervalFactor": 1,
-            "legendFormat": "{{openp}}state{{closep}}",
+            "legendFormat": "{{include openp}}state{{include closep}}",
             "refId": "A"
           }
           ],
@@ -7892,7 +7892,7 @@ data:
             "format": "time_series",
             "hide": false,
             "intervalFactor": 1,
-            "legendFormat": "{{openp}}state{{closep}}",
+            "legendFormat": "{{include openp}}state{{include closep}}",
             "refId": "A"
           }
           ],
@@ -7994,7 +7994,7 @@ data:
             "format": "time_series",
             "hide": false,
             "intervalFactor": 1,
-            "legendFormat": "{{openp}}state{{closep}}",
+            "legendFormat": "{{include openp}}state{{include closep}}",
             "refId": "A"
           }
           ],
@@ -10188,7 +10188,7 @@ data:
             ],
             "interval": "",
             "intervalFactor": 1,
-            "legendFormat": "{{openp}}instance{{closep}}",
+            "legendFormat": "{{include openp}}instance{{include closep}}",
             "orderByTime": "ASC",
             "policy": "default",
             "refId": "A",
@@ -10213,7 +10213,7 @@ data:
             "expr": "max(kube_pod_container_resource_limits_cpu_cores{pod=~\"$instance\"}) by (pod)",
             "format": "time_series",
             "intervalFactor": 1,
-            "legendFormat": "Limit {{openp}}pod{{closep}}",
+            "legendFormat": "Limit {{include openp}}pod{{include closep}}",
             "refId": "B"
           }
           ],
@@ -10332,7 +10332,7 @@ data:
             ],
             "interval": "",
             "intervalFactor": 1,
-            "legendFormat": "{{openp}}instance{{closep}}",
+            "legendFormat": "{{include openp}}instance{{include closep}}",
             "orderByTime": "ASC",
             "policy": "default",
             "refId": "A",
@@ -10357,7 +10357,7 @@ data:
             "expr": "max(kube_pod_container_resource_limits_cpu_cores{pod=~\"$instance\"}) by (pod)",
             "format": "time_series",
             "intervalFactor": 1,
-            "legendFormat": "Limit {{openp}}pod{{closep}}",
+            "legendFormat": "Limit {{include openp}}pod{{include closep}}",
             "refId": "B"
           }
           ],
@@ -10476,7 +10476,7 @@ data:
             ],
             "interval": "",
             "intervalFactor": 1,
-            "legendFormat": "{{openp}}instance{{closep}}",
+            "legendFormat": "{{include openp}}instance{{include closep}}",
             "orderByTime": "ASC",
             "policy": "default",
             "refId": "A",
@@ -10501,7 +10501,7 @@ data:
             "expr": "max(kube_pod_container_resource_limits_cpu_cores{pod=~\"$instance\"}) by (pod)",
             "format": "time_series",
             "intervalFactor": 1,
-            "legendFormat": "Limit {{openp}}pod{{closep}}",
+            "legendFormat": "Limit {{include openp}}pod{{include closep}}",
             "refId": "B"
           }
           ],
@@ -10620,7 +10620,7 @@ data:
             ],
             "interval": "",
             "intervalFactor": 1,
-            "legendFormat": "{{openp}}instance{{closep}}",
+            "legendFormat": "{{include openp}}instance{{include closep}}",
             "orderByTime": "ASC",
             "policy": "default",
             "refId": "A",
@@ -10645,7 +10645,7 @@ data:
             "expr": "max(kube_pod_container_resource_limits_cpu_cores{pod=~\"$instance\"}) by (pod)",
             "format": "time_series",
             "intervalFactor": 1,
-            "legendFormat": "Limit {{openp}}pod{{closep}}",
+            "legendFormat": "Limit {{include openp}}pod{{include closep}}",
             "refId": "B"
           }
           ],
@@ -10748,14 +10748,14 @@ data:
             "hide": false,
             "interval": "",
             "intervalFactor": 1,
-            "legendFormat": "{{openp}} instance {{closep}}",
+            "legendFormat": "{{include openp}} instance {{include closep}}",
             "refId": "E"
           },
           {
             "expr": "max(kube_pod_container_resource_limits_memory_bytes{pod=~\"$instance\"}) by (pod)",
             "format": "time_series",
             "intervalFactor": 1,
-            "legendFormat": "Limit {{openp}} pod {{closep}}",
+            "legendFormat": "Limit {{include openp}} pod {{include closep}}",
             "refId": "A"
           }
           ],
@@ -10860,14 +10860,14 @@ data:
             "hide": false,
             "interval": "",
             "intervalFactor": 1,
-            "legendFormat": "{{openp}} instance {{closep}}",
+            "legendFormat": "{{include openp}} instance {{include closep}}",
             "refId": "E"
           },
           {
             "expr": "max(kube_pod_container_resource_limits_memory_bytes{pod=~\"$instance\"}) by (pod)",
             "format": "time_series",
             "intervalFactor": 1,
-            "legendFormat": "Limit {{openp}} pod {{closep}}",
+            "legendFormat": "Limit {{include openp}} pod {{include closep}}",
             "refId": "A"
           }
           ],
@@ -10972,14 +10972,14 @@ data:
             "hide": false,
             "interval": "",
             "intervalFactor": 1,
-            "legendFormat": "{{openp}} instance {{closep}}",
+            "legendFormat": "{{include openp}} instance {{include closep}}",
             "refId": "E"
           },
           {
             "expr": "max(kube_pod_container_resource_limits_memory_bytes{pod=~\"$instance\"}) by (pod)",
             "format": "time_series",
             "intervalFactor": 1,
-            "legendFormat": "Limit {{openp}} pod {{closep}}",
+            "legendFormat": "Limit {{include openp}} pod {{include closep}}",
             "refId": "A"
           }
           ],
@@ -11084,14 +11084,14 @@ data:
             "hide": false,
             "interval": "",
             "intervalFactor": 1,
-            "legendFormat": "{{openp}} instance {{closep}}",
+            "legendFormat": "{{include openp}} instance {{include closep}}",
             "refId": "E"
           },
           {
             "expr": "max(kube_pod_container_resource_limits_memory_bytes{pod=~\"$instance\"}) by (pod)",
             "format": "time_series",
             "intervalFactor": 1,
-            "legendFormat": "Limit {{openp}} pod {{closep}}",
+            "legendFormat": "Limit {{include openp}} pod {{include closep}}",
             "refId": "A"
           }
           ],
