@@ -1,4 +1,5 @@
-{{- if .Values.dashboard.bosh.create and not .Values.dashboard.bosh.datasource.multiple -}}
+{{- if .Values.dashboard.bosh.create -}}
+{{- if  not .Values.dashboard.bosh.datasource.multiple -}}
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -1389,4 +1390,5 @@ data:
       "uid": "bosh_jobs",
       "version": 1
     }
+{{- end -}}
 {{- end -}}
