@@ -1,0 +1,66 @@
+dashboard:
+  alertmanager:
+    create: false
+    datasource:
+      # data source variable is used
+      multiple: true
+      #if not multiple single data source name is used
+      single-datasource-name: prometheus
+
+  k8s:
+    create: false
+    datasource:
+      # data source variable is used
+      multiple: true
+      #if not multiple single data source name is used
+      single-datasource-name: prometheus
+
+  node-exporter:
+    create: false
+    datasource:
+      # data source variable is used
+      multiple: true
+      #if not multiple single data source name is used
+      single-datasource-name: prometheus
+
+  openebs:
+    create: false
+    datasource:
+      # data source variable is used
+      multiple: true
+      #if not multiple single data source name is used
+      single-datasource-name: prometheus
+
+  postgresql:
+    create: false
+    datasource:
+      # data source variable is used
+      multiple: true
+      #if not multiple single data source name is used
+      single-datasource-name: prometheus
+
+  rabbit-mq:
+    create: false
+    datasource:
+      # data source variable is used
+      multiple: true
+      #if not multiple single data source name is used
+      single-datasource-name: prometheus
+
+  redis:
+    create: false 
+    datasource:
+      # data source variable is used
+      multiple: true
+      #if not multiple single data source name is used
+      single-datasource-name: prometheus
+
+  traefik_v1:
+    create: true
+    datasource:
+      # data source variable is used
+      multiple: true
+      #if not multiple single data source name is used
+      single-datasource-name: prometheus
+
+
