@@ -61,7 +61,7 @@ data:
             "rgba(237, 129, 40, 0.89)",
             "rgba(50, 172, 45, 0.97)"
           ],
-          "datasource": "{{include openp}}.Value.dashboard.bosh.datasource.single-datasource-name\}\}",
+          "datasource": "{{include openp}}.Value.dashboard.bosh.datasource.single-datasource-name{{include closep}}",
           "editable": true,
           "error": false,
           "format": "none",
@@ -154,7 +154,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "{{include openp}}.Value.dashboard.bosh.datasource.single-datasource-name\}\}",
+          "datasource": "{{include openp}}.Value.dashboard.bosh.datasource.single-datasource-name{{include closep}}",
           "editable": true,
           "error": false,
           "fill": 1,

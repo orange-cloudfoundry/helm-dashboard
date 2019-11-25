@@ -162,7 +162,7 @@ data:
               "expr": "traefik_backend_requests_total{backend=\"$backend\"}",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "{{include openp}}method\}\} : {{include openp}}code\}\}",
+              "legendFormat": "{{include openp}}method{{include closep}} : {{include openp}}code{{include closep}}",
               "refId": "A"
             }
           ],
@@ -402,7 +402,7 @@ data:
               "expr": "rate(traefik_entrypoint_requests_total{entrypoint=~\"$entrypoint\",code=\"200\"}[5m])",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "{{include openp}}method\}\} : {{include openp}}code\}\}",
+              "legendFormat": "{{include openp}}method{{include closep}} : {{include openp}}code{{include closep}}",
               "refId": "A"
             }
           ],
@@ -493,7 +493,7 @@ data:
               "expr": "rate(traefik_entrypoint_requests_total{entrypoint=~\"$entrypoint\",code!=\"200\"}[5m])",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "{{include openp}} method \}\} : {{include openp}}code\}\}",
+              "legendFormat": "{{include openp}} method {{include closep}} : {{include openp}}code{{include closep}}",
               "refId": "A"
             }
           ],
@@ -574,7 +574,7 @@ data:
               "format": "time_series",
               "interval": "",
               "intervalFactor": 2,
-              "legendFormat": "{{include openp}} backend \}\}",
+              "legendFormat": "{{include openp}} backend {{include closep}}",
               "refId": "A"
             }
           ],
@@ -618,7 +618,7 @@ data:
               "format": "time_series",
               "interval": "",
               "intervalFactor": 2,
-              "legendFormat": "{{include openp}} entrypoint \}\}",
+              "legendFormat": "{{include openp}} entrypoint {{include closep}}",
               "refId": "A"
             }
           ],
