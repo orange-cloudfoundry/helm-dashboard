@@ -1,14 +1,14 @@
-{{- if .Values.dashboard.alertManager.create }}
-{{- if .Values.dashboard.alertManager.datasource.multiple }}
+{{- if .Values.dashboard.alert_manager.create }}
+{{- if .Values.dashboard.alert_manager.datasource.multiple }}
 ## base on grafana dashboard gnetId: 9578
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: dash-k8s-master-alertmanager
+  name: dash-k8s-master-alert_manager
   labels:
     grafana_dashboard: '1'
 data:
-  grafana_k8d_master_alertmanager_dashboard.json: |
+  grafana_k8d_master_alert_manager_dashboard.json: |
     {
       "__inputs": [],
       "__requires": [

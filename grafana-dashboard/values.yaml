@@ -1,5 +1,5 @@
 dashboard:
-  alertManager:
+  alert_manager:
     create: true
     datasource:
       # data source variable is used
@@ -23,7 +23,7 @@ dashboard:
       #if not multiple single data source name is used
       single-datasource-name: prometheus
 
-  nodeExporter:
+  node_exporter:
     create: true
     datasource:
       # data source variable is used
@@ -47,7 +47,7 @@ dashboard:
       #if not multiple single data source name is used
       single-datasource-name: prometheus
 
-  rabbitMq:
+  rabbit_mq:
     create: true
     datasource:
       # data source variable is used
