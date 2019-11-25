@@ -847,7 +847,7 @@ data:
               "format": "time_series",
               "instant": false,
               "intervalFactor": 1,
-              "legendFormat": "{{include "openp"}}node{{include "closep"}}",
+              "legendFormat": "{{include "openp" .}}node{{include "closep" .}}",
               "refId": "A"
             }
           ],
@@ -1152,7 +1152,7 @@ data:
               "format": "time_series",
               "instant": false,
               "intervalFactor": 1,
-              "legendFormat": "{{include "openp"}}rabbitmq_node{{include "closep"}}",
+              "legendFormat": "{{include "openp" .}}rabbitmq_node{{include "closep" .}}",
               "refId": "A"
             }
           ],
@@ -1304,7 +1304,7 @@ data:
               "format": "time_series",
               "instant": false,
               "intervalFactor": 1,
-              "legendFormat": "{{include "openp"}}instance{{include "closep"}}",
+              "legendFormat": "{{include "openp" .}}instance{{include "closep" .}}",
               "refId": "A"
             }
           ],
@@ -1427,7 +1427,7 @@ data:
               "format": "time_series",
               "instant": false,
               "intervalFactor": 1,
-              "legendFormat": "{{include "openp"}}queue{{include "closep"}}",
+              "legendFormat": "{{include "openp" .}}queue{{include "closep" .}}",
               "refId": "A"
             }
           ],
@@ -1526,7 +1526,7 @@ data:
               "format": "time_series",
               "instant": false,
               "intervalFactor": 1,
-              "legendFormat": "{{include "openp"}}queue{{include "closep"}}",
+              "legendFormat": "{{include "openp" .}}queue{{include "closep" .}}",
               "refId": "A"
             }
           ],
@@ -1662,7 +1662,7 @@ data:
               "format": "time_series",
               "instant": false,
               "intervalFactor": 1,
-              "legendFormat": "{{include "openp"}}queue{{include "closep"}}",
+              "legendFormat": "{{include "openp" .}}queue{{include "closep" .}}",
               "refId": "A"
             }
           ],
@@ -1812,7 +1812,7 @@ data:
               "format": "time_series",
               "instant": false,
               "intervalFactor": 1,
-              "legendFormat": "{{include "openp"}}instance{{include "closep"}}",
+              "legendFormat": "{{include "openp" .}}instance{{include "closep" .}}",
               "refId": "A"
             }
           ],
@@ -1963,7 +1963,7 @@ data:
               "format": "time_series",
               "instant": false,
               "intervalFactor": 1,
-              "legendFormat": "{{include "openp"}}instance{{include "closep"}}",
+              "legendFormat": "{{include "openp" .}}instance{{include "closep" .}}",
               "refId": "A"
             }
           ],
@@ -2113,7 +2113,7 @@ data:
               "format": "time_series",
               "instant": false,
               "intervalFactor": 1,
-              "legendFormat": "{{include "openp"}}instance{{include "closep"}}",
+              "legendFormat": "{{include "openp" .}}instance{{include "closep" .}}",
               "refId": "A"
             }
           ],
