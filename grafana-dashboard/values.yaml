@@ -7,6 +7,14 @@ dashboard:
       #if not multiple single data source name is used
       single-datasource-name: prometheus
 
+  bosh:
+    create: false
+    datasource:
+      # data source variable is used
+      multiple: true
+      #if not multiple single data source name is used
+      single-datasource-name: prometheus
+
   k8s:
     create: false
     datasource:
