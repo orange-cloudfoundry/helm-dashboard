@@ -1,4 +1,4 @@
-{{- if .Values.dashboard.bosh.create -}}
+{{- if .Values.dashboard.bosh.create-}}
 {{- if .Values.dashboard.bosh.datasource.multiple -}}
 {{- else -}}
 apiVersion: v1
