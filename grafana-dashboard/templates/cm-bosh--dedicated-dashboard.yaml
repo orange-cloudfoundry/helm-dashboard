@@ -58,7 +58,7 @@ data:
             "rgba(237, 129, 40, 0.89)",
             "rgba(50, 172, 45, 0.97)"
           ],
-          "datasource": "{{.Value.dashboard.bosh.datasource.single-datasource-name}}",
+          "datasource": "\{\{.Value.dashboard.bosh.datasource.single-datasource-name\}\}",
           "editable": true,
           "error": false,
           "format": "none",
@@ -151,7 +151,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "{{.Value.dashboard.bosh.datasource.single-datasource-name}}",
+          "datasource": "\{\{.Value.dashboard.bosh.datasource.single-datasource-name\}\}",
           "editable": true,
           "error": false,
           "fill": 1,
@@ -188,7 +188,7 @@ data:
             {
               "expr": "avg(bosh_job_mem_percent{environment=~\"$environment\",bosh_name=~\"$bosh_director\",bosh_deployment=~\"$bosh_deployment\",bosh_job_name=~\"$bosh_job_name\",bosh_job_index=~\"$bosh_job_index\"}) by(bosh_deployment,bosh_job_name,bosh_job_index)",
               "intervalFactor": 2,
-              "legendFormat": "{{ bosh_deployment }}/{{ bosh_job_name }}/{{ bosh_job_index }}",
+              "legendFormat": "\{\{ bosh_deployment /}/}/\{\{ bosh_job_name /}/}/\{\{ bosh_job_index /}/}",
               "refId": "A",
               "step": 20
             }
@@ -256,7 +256,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "{{.Value.dashboard.bosh.datasource.single-datasource-name}}",
+          "datasource": "\{\{.Value.dashboard.bosh.datasource.single-datasource-name/}/}",
           "editable": true,
           "error": false,
           "fill": 1,
@@ -293,7 +293,7 @@ data:
             {
               "expr": "avg(bosh_job_swap_percent{environment=~\"$environment\",bosh_name=~\"$bosh_director\",bosh_deployment=~\"$bosh_deployment\",bosh_job_name=~\"$bosh_job_name\",bosh_job_index=~\"$bosh_job_index\"}) by(bosh_deployment,bosh_job_name,bosh_job_index)",
               "intervalFactor": 2,
-              "legendFormat": "{{ bosh_deployment }}/{{ bosh_job_name }}/{{ bosh_job_index }}",
+              "legendFormat": "\{\{ bosh_deployment /}/}/\{\{ bosh_job_name /}/}/\{\{ bosh_job_index /}/}",
               "refId": "A",
               "step": 20
             }
@@ -361,7 +361,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "{{.Value.dashboard.bosh.datasource.single-datasource-name}}",
+          "datasource": "\{\{.Value.dashboard.bosh.datasource.single-datasource-name/}/}",
           "editable": true,
           "error": false,
           "fill": 1,
@@ -399,7 +399,7 @@ data:
               "expr": "avg(bosh_job_cpu_sys{environment=~\"$environment\",bosh_name=~\"$bosh_director\",bosh_deployment=~\"$bosh_deployment\",bosh_job_name=~\"$bosh_job_name\",bosh_job_index=~\"$bosh_job_index\"}) by(bosh_deployment,bosh_job_name,bosh_job_index)",
               "interval": "",
               "intervalFactor": 2,
-              "legendFormat": "{{ bosh_deployment }}/{{ bosh_job_name }}/{{ bosh_job_index }}",
+              "legendFormat": "\{\{ bosh_deployment /}/}/\{\{ bosh_job_name /}/}/\{\{ bosh_job_index /}/}",
               "refId": "A",
               "step": 20
             }
@@ -452,7 +452,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "{{.Value.dashboard.bosh.datasource.single-datasource-name}}",
+          "datasource": "\{\{.Value.dashboard.bosh.datasource.single-datasource-name/}/}",
           "editable": true,
           "error": false,
           "fill": 1,
@@ -489,7 +489,7 @@ data:
             {
               "expr": "avg(bosh_job_cpu_user{environment=~\"$environment\",bosh_name=~\"$bosh_director\",bosh_deployment=~\"$bosh_deployment\",bosh_job_name=~\"$bosh_job_name\",bosh_job_index=~\"$bosh_job_index\"}) by(bosh_deployment,bosh_job_name,bosh_job_index)",
               "intervalFactor": 2,
-              "legendFormat": "{{ bosh_deployment }}/{{ bosh_job_name }}/{{ bosh_job_index }}",
+              "legendFormat": "\{\{ bosh_deployment /}/}/\{\{ bosh_job_name /}/}/\{\{ bosh_job_index /}/}",
               "refId": "A",
               "step": 20
             }
@@ -542,7 +542,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "{{.Value.dashboard.bosh.datasource.single-datasource-name}}",
+          "datasource": "\{\{.Value.dashboard.bosh.datasource.single-datasource-name/}/}",
           "editable": true,
           "error": false,
           "fill": 1,
@@ -579,7 +579,7 @@ data:
             {
               "expr": "avg(bosh_job_cpu_wait{environment=~\"$environment\",bosh_name=~\"$bosh_director\",bosh_deployment=~\"$bosh_deployment\",bosh_job_name=~\"$bosh_job_name\",bosh_job_index=~\"$bosh_job_index\"}) by(bosh_deployment,bosh_job_name,bosh_job_index)",
               "intervalFactor": 2,
-              "legendFormat": "{{ bosh_deployment }}/{{ bosh_job_name }}/{{ bosh_job_index }}",
+              "legendFormat": "\{\{ bosh_deployment /}/}/\{\{ bosh_job_name /}/}/\{\{ bosh_job_index /}/}",
               "refId": "A",
               "step": 20
             }
@@ -632,7 +632,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "{{.Value.dashboard.bosh.datasource.single-datasource-name}}",
+          "datasource": "\{\{.Value.dashboard.bosh.datasource.single-datasource-name/}/}",
           "editable": true,
           "error": false,
           "fill": 1,
@@ -669,7 +669,7 @@ data:
             {
               "expr": "avg(bosh_job_load_avg01{environment=~\"$environment\",bosh_name=~\"$bosh_director\",bosh_deployment=~\"$bosh_deployment\",bosh_job_name=~\"$bosh_job_name\",bosh_job_index=~\"$bosh_job_index\"}) by(bosh_deployment,bosh_job_name,bosh_job_index)",
               "intervalFactor": 2,
-              "legendFormat": "{{ bosh_deployment }}/{{ bosh_job_name }}/{{ bosh_job_index }}",
+              "legendFormat": "\{\{ bosh_deployment /}/}/\{\{ bosh_job_name /}/}/\{\{ bosh_job_index /}/}",
               "refId": "A",
               "step": 20
             }
@@ -722,7 +722,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "{{.Value.dashboard.bosh.datasource.single-datasource-name}}",
+          "datasource": "\{\{.Value.dashboard.bosh.datasource.single-datasource-name/}/}",
           "editable": true,
           "error": false,
           "fill": 1,
@@ -759,7 +759,7 @@ data:
             {
               "expr": "avg(bosh_job_load_avg05{environment=~\"$environment\",bosh_name=~\"$bosh_director\",bosh_deployment=~\"$bosh_deployment\",bosh_job_name=~\"$bosh_job_name\",bosh_job_index=~\"$bosh_job_index\"}) by(bosh_deployment,bosh_job_name,bosh_job_index)",
               "intervalFactor": 2,
-              "legendFormat": "{{ bosh_deployment }}/{{ bosh_job_name }}/{{ bosh_job_index }}",
+              "legendFormat": "\{\{ bosh_deployment /}/}/\{\{ bosh_job_name /}/}/\{\{ bosh_job_index /}/}",
               "refId": "A",
               "step": 20
             }
@@ -812,7 +812,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "{{.Value.dashboard.bosh.datasource.single-datasource-name}}",
+          "datasource": "\{\{.Value.dashboard.bosh.datasource.single-datasource-name/}/}",
           "editable": true,
           "error": false,
           "fill": 1,
@@ -849,7 +849,7 @@ data:
             {
               "expr": "avg(bosh_job_load_avg15{environment=~\"$environment\",bosh_name=~\"$bosh_director\",bosh_deployment=~\"$bosh_deployment\",bosh_job_name=~\"$bosh_job_name\",bosh_job_index=~\"$bosh_job_index\"}) by(bosh_deployment,bosh_job_name,bosh_job_index)",
               "intervalFactor": 2,
-              "legendFormat": "{{ bosh_deployment }}/{{ bosh_job_name }}/{{ bosh_job_index }}",
+              "legendFormat": "\{\{ bosh_deployment /}/}/\{\{ bosh_job_name /}/}/\{\{ bosh_job_index /}/}",
               "refId": "A",
               "step": 20
             }
@@ -902,7 +902,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "{{.Value.dashboard.bosh.datasource.single-datasource-name}}",
+          "datasource": "\{\{.Value.dashboard.bosh.datasource.single-datasource-name/}/}",
           "editable": true,
           "error": false,
           "fill": 1,
@@ -939,7 +939,7 @@ data:
             {
               "expr": "avg(bosh_job_system_disk_percent{environment=~\"$environment\",bosh_name=~\"$bosh_director\",bosh_deployment=~\"$bosh_deployment\",bosh_job_name=~\"$bosh_job_name\",bosh_job_index=~\"$bosh_job_index\"}) by(bosh_deployment,bosh_job_name,bosh_job_index)",
               "intervalFactor": 2,
-              "legendFormat": "{{ bosh_deployment }}/{{ bosh_job_name }}/{{ bosh_job_index }}",
+              "legendFormat": "\{\{ bosh_deployment /}/}/\{\{ bosh_job_name /}/}/\{\{ bosh_job_index /}/}",
               "refId": "A",
               "step": 20
             }
@@ -1007,7 +1007,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "{{.Value.dashboard.bosh.datasource.single-datasource-name}}",
+          "datasource": "\{\{.Value.dashboard.bosh.datasource.single-datasource-name/}/}",
           "editable": true,
           "error": false,
           "fill": 1,
@@ -1049,7 +1049,7 @@ data:
             {
               "expr": "avg(bosh_job_ephemeral_disk_percent{environment=~\"$environment\",bosh_name=~\"$bosh_director\",bosh_deployment=~\"$bosh_deployment\",bosh_job_name=~\"$bosh_job_name\",bosh_job_index=~\"$bosh_job_index\"}) by(bosh_deployment,bosh_job_name,bosh_job_index)",
               "intervalFactor": 2,
-              "legendFormat": "{{ bosh_deployment }}/{{ bosh_job_name }}/{{ bosh_job_index }}",
+              "legendFormat": "\{\{ bosh_deployment /}/}/\{\{ bosh_job_name /}/}/\{\{ bosh_job_index /}/}",
               "refId": "A",
               "step": 20
             }
@@ -1117,7 +1117,7 @@ data:
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "{{.Value.dashboard.bosh.datasource.single-datasource-name}}",
+          "datasource": "\{\{.Value.dashboard.bosh.datasource.single-datasource-name/}/}",
           "editable": true,
           "error": false,
           "fill": 1,
@@ -1154,7 +1154,7 @@ data:
             {
               "expr": "avg(bosh_job_persistent_disk_percent{environment=~\"$environment\",bosh_name=~\"$bosh_director\",bosh_deployment=~\"$bosh_deployment\",bosh_job_name=~\"$bosh_job_name\",bosh_job_index=~\"$bosh_job_index\"}) by(bosh_deployment,bosh_job_name,bosh_job_index)",
               "intervalFactor": 2,
-              "legendFormat": "{{ bosh_deployment }}/{{ bosh_job_name }}/{{ bosh_job_index }}",
+              "legendFormat": "\{\{ bosh_deployment /}/}/\{\{ bosh_job_name /}/}/\{\{ bosh_job_index /}/}",
               "refId": "A",
               "step": 20
             }
@@ -1232,7 +1232,7 @@ data:
               "text": "fe-int",
               "value": "fe-int"
             },
-            "datasource": "{{.Value.dashboard.bosh.datasource.single-datasource-name}}",
+            "datasource": "\{\{.Value.dashboard.bosh.datasource.single-datasource-name/}/}",
             "definition": "",
             "hide": 0,
             "includeAll": false,
@@ -1258,7 +1258,7 @@ data:
               "text": "micro-bosh",
               "value": "micro-bosh"
             },
-            "datasource": "{{.Value.dashboard.bosh.datasource.single-datasource-name}}",
+            "datasource": "\{\{.Value.dashboard.bosh.datasource.single-datasource-name/}/}",
             "definition": "",
             "hide": 0,
             "includeAll": false,
@@ -1284,7 +1284,7 @@ data:
               "text": "cfcr-persistent-worker",
               "value": "cfcr-persistent-worker"
             },
-            "datasource": "{{.Value.dashboard.bosh.datasource.single-datasource-name}}",
+            "datasource": "\{\{.Value.dashboard.bosh.datasource.single-datasource-name/}/}",
             "definition": "",
             "hide": 0,
             "includeAll": false,
@@ -1309,7 +1309,7 @@ data:
               "text": "All",
               "value": "$__all"
             },
-            "datasource": "{{.Value.dashboard.bosh.datasource.single-datasource-name}}",
+            "datasource": "\{\{.Value.dashboard.bosh.datasource.single-datasource-name/}/}",
             "definition": "",
             "hide": 0,
             "includeAll": true,
@@ -1334,7 +1334,7 @@ data:
               "text": "All",
               "value": "$__all"
             },
-            "datasource": "{{.Value.dashboard.bosh.datasource.single-datasource-name}}",
+            "datasource": "\{\{.Value.dashboard.bosh.datasource.single-datasource-name/}/}",
             "definition": "",
             "hide": 0,
             "includeAll": true,
@@ -1389,3 +1389,4 @@ data:
       "uid": "bosh_jobs",
       "version": 1
     }
+  {{- end -}}

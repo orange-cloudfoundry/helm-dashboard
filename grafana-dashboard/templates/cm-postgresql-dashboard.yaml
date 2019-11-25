@@ -1207,7 +1207,7 @@ data:
               "expr": "pg_stat_database_numbackends{datname=~\"$db\",instance=~\"$host\"}",
               "format": "time_series",
               "intervalFactor": 2,
-              "legendFormat": "{{__name__}}",
+              "legendFormat": "\{\{__name__/}/}",
               "refId": "A",
               "step": 240
             }
