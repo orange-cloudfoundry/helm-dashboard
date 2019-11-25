@@ -8,6 +8,7 @@ metadata:
   name: dash-k8s
   labels:
     grafana_dashboard: '1'
+    chart: {{ template "grafana-dashboard.chart" . }}
 data:
   grafana_k8d_dashboard.json: |
     {

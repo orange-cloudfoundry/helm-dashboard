@@ -7,6 +7,7 @@ metadata:
   name: dash-k8s-all-postgresql
   labels:
     grafana_dashboard: '1'
+    chart: {{ template "grafana-dashboard.chart" . }}
 data:
   grafana_postgresql_k8d_all_dashboard.json: |
     {

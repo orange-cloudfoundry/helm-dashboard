@@ -7,6 +7,7 @@ metadata:
   name: dash-k8s-all-node-exporter
   labels:
     grafana_dashboard: '1'
+    chart: {{ template "grafana-dashboard.chart" . }}
 data:
   grafana_k8d_all_node_exporter_dashboard.json: |
     {
