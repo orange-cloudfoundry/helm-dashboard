@@ -1,4 +1,4 @@
-{{- if .Values.dashboard.openebs.create && .Values.dashboard.openebs.datasource.multiple-}}
+{{- if .Values.dashboard.openebs.create and .Values.dashboard.openebs.datasource.multiple-}}
 apiVersion: v1
 kind: ConfigMap
 metadata:

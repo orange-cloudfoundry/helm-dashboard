@@ -1389,4 +1389,4 @@ data:
       "uid": "bosh_jobs",
       "version": 1
     }
-  {{- end -}}
+{{- end -}}
