@@ -4,7 +4,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: dash-postgresql-all-k8s
+  name: dash-k8s-all-postgresql
   labels:
     grafana_dashboard: '1'
 data:
