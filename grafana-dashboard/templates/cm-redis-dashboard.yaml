@@ -7,7 +7,8 @@ metadata:
   name: dash-k8s-all-redis
   labels:
     grafana_dashboard: '1'
-    chart: {{ template "grafana-dashboard.chart" . }}
+{{ include "grafana-dashboard.labels" . | indent 4 }}
+
 data:
   grafana_k8d_redis_dashboard.json: |
     {
