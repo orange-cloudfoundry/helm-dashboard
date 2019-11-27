@@ -23,6 +23,15 @@ dashboard:
       #if not multiple single data source name is used
       single-datasource-name: prometheus
 
+  minos:
+    create: true
+    datasource:
+      # data source variable is used
+      multiple: true
+      #if not multiple single data source name is used
+      single-datasource-name: prometheus
+
+
   node_exporter:
     create: true
     datasource:
