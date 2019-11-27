@@ -563,8 +563,8 @@ data:
             "current": {
               "selected": true,
               "tags": [],
-              "text": "All",
-              "value": "$__all"
+              "text": "Prometheus",
+              "value": "Prometheus"
             },
             "hide": 0,
             "includeAll": false,
