@@ -18,7 +18,7 @@ jobs:
             cd charts
             helm init --client-only
             helm package ../grafana-dashboard/.
-            helm index .
+            helm repo index .
             cd ..
             git commit -a -m"new release"
             git push
