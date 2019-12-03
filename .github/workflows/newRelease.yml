@@ -16,7 +16,7 @@ jobs:
           helmv3: 3.0.0
           command: |            
             cd charts
-            helm package ../.
+            helm package ../grafana-dashboard/.
             helm index .
             cd ..
             git commit -a -m"new release"
