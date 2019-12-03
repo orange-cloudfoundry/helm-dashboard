@@ -16,6 +16,7 @@ jobs:
           helmv3: 3.0.0
           command: |            
             cd charts
+            helm init --client-only
             helm package ../grafana-dashboard/.
             helm index .
             cd ..
